@@ -28,5 +28,11 @@ samples, guidance on mobile development, and a full API reference.
 本人的邮箱为  shixinhua@imoran.net,有问题请及时联系
     
 
+闪屏页
 
+![闪屏页](https://github.com/wuxianghua/hua-app/blob/master/image/flash.png)
+
+电影页面
+
+![闪屏页](https://github.com/wuxianghua/hua-app/blob/master/image/film.png)
 

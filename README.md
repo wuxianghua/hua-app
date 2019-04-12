@@ -31,5 +31,8 @@ samples, guidance on mobile development, and a full API reference.
 闪屏页
 
 ![闪屏页](https://github.com/wuxianghua/hua-app/blob/master/image/flash.png)
-![闪屏页](https://github.com/wuxianghua/hua-app/blob/master/image/film.png)
+
+电影页面
+
+![闪屏页](https://github.com/wuxianghua/hua-app/blob/master/image/my.png)
 

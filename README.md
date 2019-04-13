@@ -29,7 +29,7 @@ samples, guidance on mobile development, and a full API reference.
     
 闪屏页
 
-![新闻](https://github.com/wuxianghua/hua-app/blob/master/image/flash.png)    
+![闪屏](https://github.com/wuxianghua/hua-app/blob/master/image/flash.png)    
 
 新闻模块
 

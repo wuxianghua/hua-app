@@ -55,5 +55,5 @@ samples, guidance on mobile development, and a full API reference.
 
 项目架构图
 
-![](https://github.com/wuxianghua/hua-app/blob/master/image/.png)
+![](https://github.com/wuxianghua/hua-app/blob/master/image/construct.png)
 

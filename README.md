@@ -45,4 +45,6 @@ samples, guidance on mobile development, and a full API reference.
 ![技术](https://github.com/wuxianghua/hua-app/blob/master/image/tech.png)
 
 
+详情页
 
+![详情](https://github.com/wuxianghua/hua-app/blob/master/image/detail.png)

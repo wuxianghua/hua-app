@@ -19,7 +19,7 @@ class FilmPage extends StatefulWidget {
 class _BookPage extends State<FilmPage> with AutomaticKeepAliveClientMixin{
   int _counter = 0;
   DataResult dataResult;
-  List<DouBanFilmSubjectBean> mData = [];
+  List<TodayFilmBean> mData = [];
 
   @override
   void initState() {
@@ -43,9 +43,9 @@ class _BookPage extends State<FilmPage> with AutomaticKeepAliveClientMixin{
   }
 
   void getOnNowFilm() async {
-    dataResult = await DouBanDao.getOnNowFilmDao();
+    dataResult = await TodayDao.getTodayFilmListDao();
     setState(() {
-      mData = dataResult.data.subjects;
+      mData = dataResult.data;
     });
   }
 
@@ -59,13 +59,13 @@ class _BookPage extends State<FilmPage> with AutomaticKeepAliveClientMixin{
               new Container(height:160,
                   child: new CardItem(color: Colors.black12,child: _getChild(index))),
               new Container(height:20,
-                  child: new Text(mData[index].title,
+                  child: new Text(mData[index].movieName,
                 textAlign: TextAlign.end,
                 style: TextStyle(fontSize: 12,color: Colors.black),
                 maxLines: 1,
               ),padding: EdgeInsets.only(left: 6)),
               new Container(height:10,
-                  child: new Text("评分:" + mData[index].rating.average.toString(),
+                  child: new Text("评分:" + "9.0",
                 textAlign: TextAlign.end,
                 style: TextStyle(fontSize: 10),
                 maxLines: 1,
@@ -73,13 +73,13 @@ class _BookPage extends State<FilmPage> with AutomaticKeepAliveClientMixin{
               padding: EdgeInsets.only(left: 6),)
             ]),
         onTap: () {
-          NavigatorUtils.goArticalDetail(context,mData[index].alt,mData[index].title);
+          //NavigatorUtils.goArticalDetail(context,mData[index].alt,mData[index].title);
         });
   }
 
   _getChild(int i) {
     return new Padding(padding: new EdgeInsets.all(1.0),
-        child: new Image(image: NetworkImage(mData[i].images.medium)));
+        child: new Image(image: NetworkImage(mData[i].pic_url)));
   }
 
   @override
